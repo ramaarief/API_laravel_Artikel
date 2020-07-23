@@ -20,7 +20,7 @@ class KategoriController extends Controller
         $kategori = Kategori::when($request->search, function ($query) use ($request) {
             $query->join('artikel', 'kategori.artikel_id', '=', 'artikel.id')
                 ->where('artikel.judul', 'LIKE', '%' . $request->search . '%')
-                ->select('artikel.*', 'artikel.judul AS artikel_judul');
+                ->select('kategori.*', 'artikel.judul AS artikel_judul');
         })->paginate(10);
 
         return view('kategori.index', compact('kategori', 'artikel'));

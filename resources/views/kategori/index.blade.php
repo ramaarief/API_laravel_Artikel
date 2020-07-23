@@ -7,11 +7,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="title-5 m-b-35">data kategori artikel</h3>
-                    <div class="table-data__tool">
-                        <div class="table-data__tool-right">
-                            <a class="au-btn au-btn-icon au-btn--green au-btn--small" href="/kategori/create">
-                                <i class="zmdi zmdi-plus"></i>add item</a>
-                        </div>
+                    <div style="text-align: right;">
+                        <a class="au-btn au-btn-icon au-btn--green au-btn--small" href="/kategori/create">
+                            <i class="zmdi zmdi-plus"></i>add item</a>
                     </div>
                 </div>
             </div>
@@ -31,31 +29,26 @@
                                     <th width="20%">
                                         Nama Kategori
                                     </th>
-                                    <th>aksi</th>
+                                    <th style="padding-right: 65px;">aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($kategori as $kt )
+                                @foreach($kategori as $kate => $kt )
                                 <tr>
                                     <td>
-
-                                        {{ $kt->id }}
-
+                                        {{ $kate + $kategori->firstitem() }}
                                     </td>
                                     <td>
-
                                         @foreach($artikel as $ar)
                                         @if($ar->id == $kt->artikel_id)
                                         {{ $ar->judul }}
                                         @endif
                                         @endforeach
-
                                     </td>
                                     <td>
                                         <div style="text-align: left;">
                                             {{ $kt->nama_kategori }}
                                         </div>
-
                                     </td>
                                     <td>
                                         <div class="table-data-feature">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Artikel;
+use App\Kategori;
 
 class ArtikelController extends Controller
 {
@@ -14,11 +15,13 @@ class ArtikelController extends Controller
      */
     public function index(Request $request)
     {
+        $kategori = Kategori::all();
+
         $artikel = Artikel::when($request->search, function ($query) use ($request) {
             $query->where('judul', 'LIKE', '%' . $request->search . '%');
         })->paginate(5);
 
-        return view('artikel.index', compact('artikel'));
+        return view('artikel.index', compact('artikel', 'kategori'));
     }
 
     /**

@@ -3,7 +3,7 @@
     <div class="section__content section__content--p30">
         <div class="container-fluid">
             <div class="header-wrap">
-                <h3></h3>
+                <h3 style="margin-left: 250px;">HALAMAN ADMINISTRATOR</h3>
                 <div class="header-button">
                     <div class="account-wrap">
                         <div class="account-item clearfix js-item-menu">

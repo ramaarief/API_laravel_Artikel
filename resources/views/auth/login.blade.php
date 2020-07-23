@@ -33,6 +33,9 @@
     <!-- Main CSS-->
     <link href="{{ asset('asset/css/theme.css') }}" rel="stylesheet" media="all" />
 
+    <!-- Icon -->
+    <link rel="shortcut icon" href="{{ asset('asset/images/icon/logo.png') }}">
+
 </head>
 
 <body class="animsition">
@@ -51,7 +54,7 @@
                                 @csrf
                                 <div class="form-group">
                                     <label>Email Address</label>
-                                    <input class="au-input au-input--full" type="email" name="email" placeholder="Email">
+                                    <input class="au-input au-input--full" type="email" name="email" placeholder="Email" required>
                                     @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -60,7 +63,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
+                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Password" required>
                                     @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

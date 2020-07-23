@@ -30,7 +30,7 @@
                                         <label for="text-input" class="form-control-label">Nama Kategori</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <input type="text" id="text-input" name="nama_kategori" placeholder="Isi kategori artikel disini . . ." class="form-control" />
+                                        <input type="text" id="text-input" name="nama_kategori" placeholder="Isi kategori artikel disini . . ." class="form-control" required />
                                     </div>
                                 </div>
                         </div>

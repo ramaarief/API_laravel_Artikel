@@ -18,7 +18,7 @@
                                         <label for="text-input" class="form-control-label">Judul Artikel</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <input type="text" id="text-input" name="judul" placeholder="Isi judul artikel disini . . ." class="form-control" />
+                                        <input type="text" id="text-input" name="judul" placeholder="Isi judul artikel disini . . ." class="form-control" required />
                                     </div>
                                 </div>
                                 <div class="row form-group">
@@ -26,7 +26,7 @@
                                         <label for="textarea-input" class="form-control-label">Cuplikan</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <textarea name="cuplikan" id="textarea-input" rows="9" placeholder="Isi cuplikan artikel disini . . ." class="form-control"></textarea>
+                                        <textarea name="cuplikan" id="textarea-input" rows="9" placeholder="Isi cuplikan artikel disini . . ." class="form-control" required></textarea>
                                     </div>
                                 </div>
                                 <div class="row form-group">
@@ -34,7 +34,7 @@
                                         <label for="textarea-input" class="form-control-label">Isi</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <textarea name="isi" id="textarea-input" rows="9" placeholder="Isi artikel disini . . ." class="form-control"></textarea>
+                                        <textarea name="isi" id="textarea-input" rows="9" placeholder="Isi artikel disini . . ." class="form-control" required></textarea>
                                     </div>
                                 </div>
                                 <div class="row form-group">
@@ -42,15 +42,15 @@
                                         <label for="file-input" class="form-control-label">Input Gambar</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <input type="file" id="file-input" name="gambar" class="form-control-file" />
+                                        <input type="file" id="file-input" name="gambar" class="form-control-file" required />
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col col-md-3">
-                                        <label for="text-input" class="form-control-label">Waktu Pembuatan Artikel</label>
+                                        <label for="text-input" class="form-control-label">Waktu Pembuatan Artikel <br> (4 digit)</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <input type="number" id="text-input" name="waktu" placeholder="Isi waktu pembuatan artikel dalam tahun . . ." class="form-control" />
+                                        <input type="number" id="text-input" name="waktu" placeholder="Isi waktu pembuatan artikel dalam tahun . . ." class="form-control" required />
                                     </div>
                                 </div>
                         </div>

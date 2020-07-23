@@ -17,3 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/daftarArtikel', 'ApiController@showDaftar');
+
+Route::get('/detailArtikel', 'ApiController@showDetail');
+
+Route::get('/daftarKategori', 'ApiController@showKategori');
+
+Route::post('/search', 'ApiController@search');
+
+Route::post('/filter', 'ApiController@filter');

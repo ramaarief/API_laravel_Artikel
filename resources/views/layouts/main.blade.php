@@ -10,7 +10,7 @@
     <meta name="keywords" content="au theme template" />
 
     <!-- Title Page-->
-    <title>Dashboard</title>
+    <title>Pusat Informasi Artikel</title>
 
     <!-- Fontfaces CSS-->
     <link href="{{ asset('asset/css/font-face.css') }}" rel="stylesheet" media="all" />
@@ -32,6 +32,10 @@
 
     <!-- Main CSS-->
     <link href="{{ asset('asset/css/theme.css') }}" rel="stylesheet" media="all" />
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="{{ asset('asset/images/icon/logo.png') }}">
+
 </head>
 
 <body class="animsition">
@@ -163,7 +167,7 @@
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li class="active has-sub">
+                        <li class="active">
                             <a href="/">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
