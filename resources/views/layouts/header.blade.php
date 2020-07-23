@@ -3,12 +3,7 @@
     <div class="section__content section__content--p30">
         <div class="container-fluid">
             <div class="header-wrap">
-                <form class="form-header" action="" method="GET">
-                    <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for data article" value="{{ request()->get('search') }}" />
-                    <button class="au-btn--submit" type="submit">
-                        <i class="zmdi zmdi-search"></i>
-                    </button>
-                </form>
+                <h3></h3>
                 <div class="header-button">
                     <div class="account-wrap">
                         <div class="account-item clearfix js-item-menu">

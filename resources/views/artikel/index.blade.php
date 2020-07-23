@@ -9,12 +9,18 @@
                     <h3 class="title-5 m-b-35">data informasi artikel</h3>
                     <div class="table-data__tool">
                         <div class="table-data__tool-left">
-                            <button class="au-btn-filter">
-                                <i class="zmdi zmdi-filter-list"></i>filters</button>
+                            <form class="form-header" action="" method="GET">
+                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for data article" value="{{ request()->get('search') }}" />
+                                <button class="au-btn--submit" type="submit">
+                                    <i class="zmdi zmdi-search"></i>
+                                </button>
+                            </form>
                         </div>
                         <div class="table-data__tool-right">
                             <a class="au-btn au-btn-icon au-btn--green au-btn--small" href="/artikel/create">
                                 <i class="zmdi zmdi-plus"></i>add item</a>
+                            <button class="au-btn-filter">
+                                <i class="zmdi zmdi-filter-list"></i>filters</button>
                         </div>
                     </div>
                 </div>
