@@ -7,88 +7,49 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="overview-wrap">
-                        <h2 class="title-1">overview</h2>
+                        <h2 class="title-1">welcome back {{ auth()->user()->name }} !</h2>
                     </div>
                 </div>
             </div>
-            <div class="row m-t-25">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="overview-item overview-item--c1">
-                        <div class="overview__inner">
-                            <div class="overview-box clearfix">
+            <!-- STATISTIC-->
+            <section class="statistic statistic2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="statistic__item statistic__item--green">
+                                <h2 class="number">{{$user}}</h2>
+                                <span class="desc">members</span>
                                 <div class="icon">
                                     <i class="zmdi zmdi-account-o"></i>
                                 </div>
-                                <div class="text">
-                                    <h2>10368</h2>
-                                    <span>members online</span>
-                                </div>
-                            </div>
-                            <div class="overview-chart">
-                                <canvas id="widgetChart1"></canvas>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="overview-item overview-item--c2">
-                        <div class="overview__inner">
-                            <div class="overview-box clearfix">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="statistic__item statistic__item--orange">
+                                <h2 class="number">{{$artikel}}</h2>
+                                <span class="desc">Total Article</span>
                                 <div class="icon">
-                                    <i class="zmdi zmdi-shopping-cart"></i>
+                                    <i class="fas fa-copy"></i>
                                 </div>
-                                <div class="text">
-                                    <h2>388,688</h2>
-                                    <span>items solid</span>
-                                </div>
-                            </div>
-                            <div class="overview-chart">
-                                <canvas id="widgetChart2"></canvas>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="overview-item overview-item--c3">
-                        <div class="overview__inner">
-                            <div class="overview-box clearfix">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="statistic__item statistic__item--blue">
+                                <h2 class="number">{{$kategori}}</h2>
+                                <span class="desc">total category</span>
                                 <div class="icon">
-                                    <i class="zmdi zmdi-calendar-note"></i>
+                                    <i class="fas fa-table"></i>
                                 </div>
-                                <div class="text">
-                                    <h2>1,086</h2>
-                                    <span>this week</span>
-                                </div>
-                            </div>
-                            <div class="overview-chart">
-                                <canvas id="widgetChart3"></canvas>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="overview-item overview-item--c4">
-                        <div class="overview__inner">
-                            <div class="overview-box clearfix">
-                                <div class="icon">
-                                    <i class="zmdi zmdi-money"></i>
-                                </div>
-                                <div class="text">
-                                    <h2>$1,060,386</h2>
-                                    <span>total earnings</span>
-                                </div>
-                            </div>
-                            <div class="overview-chart">
-                                <canvas id="widgetChart4"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
+            <!-- END STATISTIC-->
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright">
-                        <p style="margin-top: 180px;">
+                        <p style="margin-top: 280px;">
                             Copyright © 2020 RAP
                         </p>
                     </div>
