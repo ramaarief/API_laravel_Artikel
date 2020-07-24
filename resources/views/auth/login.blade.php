@@ -10,7 +10,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Login</title>
+    <title>Login - Pusat Informasi Artikel</title>
 
     <!-- Fontfaces CSS-->
     <link href="{{ asset('asset/css/font-face.css') }}" rel="stylesheet" media="all" />

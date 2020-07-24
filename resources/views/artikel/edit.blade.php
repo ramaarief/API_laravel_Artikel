@@ -1,4 +1,7 @@
 @extends('layouts/main')
+
+@section('title', 'Form Edit Data Artikel')
+
 @section('content')
 <!-- MAIN CONTENT-->
 <div class="main-content">

@@ -1,4 +1,7 @@
 @extends('layouts/main')
+
+@section('title', 'Daftar Artikel')
+
 @section('content')
 <!-- MAIN CONTENT-->
 <div class="main-content">
@@ -71,7 +74,7 @@
                             </tbody>
                         </table>
                         <br>
-                        Jumlah Data Barang =
+                        Jumlah Data Artikel =
                         {{ $artikel->total() }}
                         <h6 class="page-title">Page Number</h6>
                         {{ $artikel->links() }}
