@@ -23,7 +23,10 @@ class ApiController extends Controller
 
     public function showKategori()
     {
-        $kategori = DB::table('kategori')->select('id', 'artikel_id', 'nama_kategori')->get();
+        $kategori = DB::table('kategori')
+            ->join('artikel', 'kategori.artikel_id', '=', 'artikel.id')
+            ->select('kategori.id', 'artikel.judul', 'nama_kategori')
+            ->get();
 
         return response()->json($kategori);
     }
