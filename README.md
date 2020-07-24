@@ -11,7 +11,7 @@
     <li>a. Menu Data Kategori : Halaman yang berisikan CRUD Data Kategori</li>
 </ul>
 <h3>Desain Database : </h3>
-<p align="center"><img src="https://raw.githubusercontent.com/ramaarief/tutorial_caker/master/DB.png"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ramaarief/tutorial_caker/master/database.png"></p>
 <h3>Screenshot Aplikasi : </h3>
 <ul>
     <p align="center"><img src="https://raw.githubusercontent.com/ramaarief/tutorial_caker/master/api_login.png"></p>
