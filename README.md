@@ -26,3 +26,8 @@
     <p align="center"><img src="https://raw.githubusercontent.com/ramaarief/tutorial_caker/master/api_data_kategori.png"></p>
 	<p align="center">Halaman Data Kategori</p>
 </ul>
+<h3>Dependency : </h3>
+<p>Pada website ini saya menambahkan dependency Laravel UI yang digunakan untuk menambahkan Authentication pada website laravel ini.</p>
+<h3>Informasi : </h3>
+<p>Jika ingin melihat admin profile yang digunakan untuk login bisa dilihat di bagian folder factories pada UserFactory.php</p>
+
