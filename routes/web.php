@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 //Route Auth
 Auth::routes();
 
+//Route untuk logout
 Route::get('signout', ['as' => 'auth.signout', 'uses' => 'Auth\loginController@signout']);
 
 //Route grouping middleware untuk auth
@@ -26,7 +27,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 
     //Route tabel data artikel
-    Route::get('/artikel', 'ArtikelController@index');
+    Route::get('artikel', 'ArtikelController@index');
 
     Route::get('/artikel/create', 'ArtikelController@create');
 
@@ -39,7 +40,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/artikel/{id}', 'ArtikelController@destroy');
 
     //Route tabel data kategori
-    Route::get('/kategori', 'KategoriController@index');
+    Route::get('kategori', 'KategoriController@index');
 
     Route::get('/kategori/create', 'KategoriController@create');
 
